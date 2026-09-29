@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-space-grotesk: var(--font-space-grotesk), sans-serif;
+  --font-jetbrains-mono: var(--font-jetbrains-mono), monospace;
+  --font-inter: var(--font-inter), sans-serif;
+
+  --color-frame: #141414;
+  --color-canvas: #F8F4EC;
+  --color-panel: #FFFDF8;
+  --color-subtle: #E6E6E2;
+  --color-accent: #EDB13E;
+
+  --color-fatal: #D9503F;
+  --color-smell: #EDB13E;
+  --color-optimization: #4FA35A;
+
+  --color-google-blue: #4C80F0;
+  --color-google-red: #D9503F;
+  --color-google-yellow: #EDB13E;
+  --color-google-green: #4FA35A;
+}
+
+/* Neo-Brutalist Stitch Hard Shadows */
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #141414;
+}
+
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #141414;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #141414;
+}
+
+.brutal-shadow-hover {
+  transition: all 0.1s ease-in-out;
+}
+
+.brutal-shadow-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #141414;
+}
+
+.brutal-shadow-hover:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #141414;
+}
+
+/* Subtle Technical Drafting Grid */
+.drafting-grid {
+  background-color: #F8F4EC;
+  background-image: 
+    linear-gradient(to right, rgba(20, 20, 20, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Thin Neo-Brutalist Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+  border-left: 1px solid #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EDB13E;
+}
